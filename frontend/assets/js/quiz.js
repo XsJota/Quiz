@@ -31,9 +31,11 @@
     `);
 
 
-    $("#start").click(function(quizQuestions){ // Evento de clique
-        
-        $("body").append(`
+$("#start").click(function () {
+    
+    $("body").empty()
+
+  $("body").append(`
         <div class="flex justify-center items-center h-screen">
         <div class="container w-full max-w-xl ">
             <div class="p-12 pb-10 mb-10 flex flex-col items-center justify-center">
