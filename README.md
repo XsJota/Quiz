@@ -17,7 +17,7 @@ Neste projeto, desenvolvemos um quiz que abrange tópicos de HTML, CSS, Tailwind
 
 Este projeto foi desenvolvido graças aos esforços e contribuições de várias pessoas. Agradecemos aos seguintes contribuidores:
 
-1. [Nome do Contribuidor 1](link-do-perfil) - Especializado em desenvolvimento Frontend, trouxe a expertise em HTML e CSS, ajudando a criar um design atraente e responsivo para o quiz.
+1. @wineerx - Especializado em desenvolvimento Frontend, trouxe a expertise em HTML e CSS, ajudando a criar um design atraente e responsivo para o quiz.
 
 2. [Nome do Contribuidor 2](link-do-perfil) - Com vasta experiência em Tailwind CSS, o Contribuidor 2 otimizou o estilo do quiz, tornando-o elegante e bem estruturado.
 
