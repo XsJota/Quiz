@@ -42,3 +42,33 @@
 */
 
 
+const quizQuestions = [
+
+    {
+      question: "Qual o maior planeta em nosso Sistema Solar?",
+      options: ["Marte", "Jupiter", "Vênus", "Saturno"],
+      answer: 1,
+    },
+    {
+      question: "Qual a capital da França?",
+      options: ["Paris", "Madrid", "London", "Rome"],
+      answer: 0,
+    },
+    {
+      question: "Quem foi Leonardo da Vint?",
+      options: ["Ator", "Programador", "Roteirista", "Engenheiro"],
+      answer: 3,
+    },
+    {
+      question: "Qual o símbolo do Ouro na Tabela Periódica?",
+      options: ["Go", "Gd", "Au", "Ag"],
+      answer: 2,
+    },
+    {
+      question: "Qual o maior animal terrestre do mundo?",
+      options: ["Elefante", "Girafa", "Hipopótamo", "Rinoceronte"],
+      answer: 1,
+    }
+    
+  ];
+  
