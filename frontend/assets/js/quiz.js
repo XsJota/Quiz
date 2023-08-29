@@ -82,6 +82,11 @@ const render = () => {
       </div>
   </div>
 `);
+  $("#correct").click(submitButton)
+
+}; 
+const submitButton = event => {
+  
 }; 
 
 function playGame(status){
