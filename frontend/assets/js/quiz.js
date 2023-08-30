@@ -1,6 +1,6 @@
 var inGame = false;
-var currentQuestion = 0;
 var score = 0;
+var currentQuestion = 0;
 const quizQuestions = [
   {
     question: "Qual o maior planeta em nosso Sistema Solar?",
