@@ -34,7 +34,9 @@ const quizQuestions = [
 ];
 playGame(inGame)
 
-const render = () => {
+playGame(inGame);
+
+const loadQuestion = () => {
   $("body").empty();
 
   $("body").append(`
@@ -49,20 +51,22 @@ const render = () => {
                   <div class="bg-white p-8 rounded shadow-md w-96 shadow-lg shadow-gray-500/50">
                       <div class="flex items-center justify-between mb-4">
                         <div class="text-lg font-semibold">Questão 1 de 5</div>
-                      <div class="text-lg font-semibold">Score: 0</div>
+                      <div class="text-lg font-semibold">Score: ${score}</div>
                   </div>
                   <div class="mb-6">
-                     <h2 class="text-xl font-semibold">Qual é a capital da França?</h2>
+                     <h2 id='question' class="text-xl font-semibold">${quizQuestions[currentQuestion].question}</h2>
                   </div>
                   <div class="mb-4">
                       <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Paris</button>
-                  </div>
-                  <div class="mb-4">
-                      <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Berlin</button>
-                  </div>
+              </div>
+          </div>
                   <div class="mb-4">
                       <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Madrid</button>
-                  </div>
+      </div>
+  </div>
+  `)
+  for (i = 0; i < quizQuestions[currentQuestion].options.length; i++) {
+    $(".bg-white").append(`
                   <div class="mb-4">
                       <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Rio de Janeiro</button>
                   </div>
