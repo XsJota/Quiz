@@ -1,5 +1,6 @@
 var inGame = false;
 var currentQuestion = 0;
+var score = 0;
 const quizQuestions = [
   {
     question: "Qual o maior planeta em nosso Sistema Solar?",
@@ -32,13 +33,11 @@ const quizQuestions = [
     answer: 3,
   }
 ];
-playGame(inGame)
 
 playGame(inGame);
 
 const loadQuestion = () => {
   $("body").empty();
-
   $("body").append(`
       <div class="flex justify-center items-center h-screen">
           <div class="container w-full max-w-xl ">
@@ -56,47 +55,49 @@ const loadQuestion = () => {
                   <div class="mb-6">
                      <h2 id='question' class="text-xl font-semibold">${quizQuestions[currentQuestion].question}</h2>
                   </div>
-                  <div class="mb-4">
-                      <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Paris</button>
               </div>
           </div>
-                  <div class="mb-4">
-                      <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Madrid</button>
       </div>
   </div>
   `)
   for (i = 0; i < quizQuestions[currentQuestion].options.length; i++) {
     $(".bg-white").append(`
-                  <div class="mb-4">
-                      <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">Rio de Janeiro</button>
-                  </div>
-
-                  <div class="h-4 relative w-full bg-gray-300 rounded">
-                      <div class="h-full bg-yellow-500 rounded" style="width: 10%;"></div>
-                  </div>
-
-                  <div class="mt-4">
-                      <button class="w-full bg-red-400 text-white py-2 rounded-md hover:bg-red-600">Reiniciar</button>
-                  </div>
-                  
-
-              </div>
-
-          </div>
+    <div class="mb-4">
+      <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-yellow-600">${quizQuestions[currentQuestion].options[i]}</button>
+    </div>
+    `);
+  }
+    $(".bg-white").append(`
+      <div class="h-4 relative w-full bg-gray-300 rounded">
+        <div class="h-full bg-yellow-500 rounded" style="width: 10%;"></div>
       </div>
-  </div>
-`);
-  $("#correct").click(submitButton)
+    `)
+    $(".bg-white").append(`
+      <div class="mt-4">
+        <button class="w-full bg-red-400 text-white py-2 rounded-md hover:bg-red-600">Reiniciar</button>
+      </div>
+    `)
+  $(".mb-4").click(submitButton);
+};
 
-}; 
-const submitButton = event => {
-  
-}; 
+const submitButton = (event) => {
+  let selectedAnswer = $(event.target).text();
+  console.log(selectedAnswer);
+  if (selectedAnswer === quizQuestions[currentQuestion].options[quizQuestions[currentQuestion].answer]){
+    score++;
+  }
 
-function playGame(status){
+  currentQuestion++;
+  if (currentQuestion < quizQuestions.length) {
+    loadQuestion();
+    return;
+  }
+};
+function playGame(status) {
   inGame = status;
-  if(inGame) {
-    render();
+  if (inGame) {
+    loadQuestion();
+    return;
   }
   $("body").append(`
     <div class="flex justify-center items-center h-screen">
@@ -125,14 +126,12 @@ function playGame(status){
         </div>
     </div>
 `);
-};
+}
 
 $("#start").click(function () {
-  inGame = true
-  playGame(inGame)
+  inGame = true;
+  playGame(inGame);
 });
-
-
 
 /* 
 const questionConteiner = document.getElementById('question-conteiner');
@@ -179,4 +178,3 @@ nextButton.addEventListener('click', () => {
 
 showQuestion(quizQuestions[numberQuestionIndex]);
 */
-
