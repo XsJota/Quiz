@@ -91,6 +91,22 @@ const submitButton = (event) => {
   if (currentQuestion < quizQuestions.length) {
     loadQuestion();
     return;
+  }else{
+    $("body").empty();
+    $("body").append(`
+      <div class="flex justify-center items-center h-screen">
+        <div class="container w-full max-w-xl">
+          <div class="p-12 pb-10 mb-10 flex flex-col items-center justify-center">
+             <div class="bg-white p-8 rounded shadow-md w-96 shadow-lg shadow-gray-500/50">
+              <div class="text-center">
+                <h2 class="text-xl font-semibold">Quiz Completed</h2>
+                <p>Your Score: ${score} out of ${quizQuestions.length}</p>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+     `);
   }
 };
 function playGame(status) {
