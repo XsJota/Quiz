@@ -78,6 +78,8 @@ const loadQuestion = () => {
       </div>
     `)
   $(".mb-4").click(submitButton);
+  $(".mt-4").click(homeScreen);
+
 };
 
 const submitButton = (event) => {
