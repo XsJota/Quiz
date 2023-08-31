@@ -49,7 +49,7 @@ const loadQuestion = () => {
               
                   <div class="bg-white p-8 rounded shadow-md w-96 shadow-lg shadow-gray-500/50">
                       <div class="flex items-center justify-between mb-4">
-                        <div class="text-lg font-semibold">Questão 1 de 5</div>
+                        <div class="text-lg font-semibold">Questão ${(currentQuestion + 1)} de ${quizQuestions.length}</div>
                       <div class="text-lg font-semibold">Score: ${score}</div>
                   </div>
                   <div class="mb-6">
