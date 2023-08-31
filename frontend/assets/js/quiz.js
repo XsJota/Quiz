@@ -69,7 +69,7 @@ const loadQuestion = () => {
   }
     $(".bg-white").append(`
       <div class="h-4 relative w-full bg-gray-300 rounded">
-        <div class="h-full bg-yellow-500 rounded" style="width: 10%;"></div>
+        <div class="h-full bg-yellow-500 rounded" style="width: ;">${(currentQuestion + 1) / quizQuestions.length * 100}</div>
       </div>
     `)
     $(".bg-white").append(`
