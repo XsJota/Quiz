@@ -78,8 +78,6 @@ const loadQuestion = () => {
       </div>
     `)
   $(".mb-4").click(submitButton);
-  $(".mt-4").click(homeScreen);
-
 };
 
 const submitButton = (event) => {
@@ -94,7 +92,7 @@ const submitButton = (event) => {
     loadQuestion();
     return;
   }else{
-    $("body").empty();
+  $("body").empty();
     $("body").append(`
       <div class="flex justify-center items-center h-screen">
         <div class="container w-full max-w-xl">
@@ -103,44 +101,26 @@ const submitButton = (event) => {
               <div class="text-center">
                 <h2 class="text-xl font-semibold">Quiz Completed</h2>
                 <p>Your Score: ${score} out of ${quizQuestions.length}</p>
-              </div>
+                </div>
             </div>
            </div>
          </div>
        </div>
      `);
   }
+    $(".text-center").append(`
+       <div class="mt-4">
+         <button class="w-full bg-yellow-400 text-white py-2 rounded-md hover:bg-red-600">Reiniciar</button>
+       </div>
+    `)
+
+  $(".mt-4").click(function() {
+    $("body").empty();
+    currentQuestion = 0;
+    score = 0;
+    loadQuestion();
+  });
 };
-const homeScreen = () => {
-  $("body").empty()
-  $("body").append(`
-    <div class="flex justify-center items-center h-screen">
-        <div class="container w-full max-w-xl ">
-            <div class="px-32 pt-6 pb-8 mb-4 ">
-
-                <div class="logo mr-5 max-w-xs max-w-xs">
-                    <img src="assets/img/quiz2.png" alt="Logo Quiz" srcset="">
-                </div>
-                
-                <div>
-                    <div class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-                        <button id='start' type="button" onclick="">Iniciar</button>
-                    </div>
-
-                    <div class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-                        <button type="button" onclick="">Recordes</button>
-                    </div>
-
-                    <div class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-                        <button type="button" onclick="">Encerrar</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-`);
-}
 function playGame(status) {
   inGame = status;
   if (inGame) {
