@@ -1,6 +1,6 @@
 # Quiz
 
-Bem-vindo ao repositório do Quiz de HTML, CSS, Tailwind e JavaScript! Este é um projeto colaborativo que visa fornecer um quiz interativo para testar seus conhecimentos em desenvolvimento web.
+Bem-vindo ao repositório do Quiz de HTML, CSS, Tailwind e JavaScript! Este é um projeto colaborativo que visa fornecer um quiz interativo para testar seu conhecimento.
 
 ## Como Funciona
 
