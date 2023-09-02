@@ -4,7 +4,7 @@ Bem-vindo ao repositório do Quiz de HTML, CSS, Tailwind e JavaScript! Este é u
 
 ## Como Funciona
 
-Neste projeto, desenvolvemos um quiz que abrange tópicos de HTML, CSS, Tailwind e JavaScript. O quiz é composto por uma série de perguntas de múltipla escolha que irão desafiar seus conhecimentos nessas áreas. Cada pergunta tem opções de resposta, e você deve selecionar a opção correta. No final do quiz, você receberá uma pontuação com base no número de respostas corretas.
+Neste projeto, desenvolvemos um quiz que abrange tópicos de conhecimento geral. O quiz é composto por uma série de perguntas de múltipla escolha que irão desafiar seu conhecimento. Cada pergunta tem opções de resposta, e você deve selecionar a opção correta. No final do quiz, você receberá uma pontuação com base no número de respostas corretas.
 
 ## Tecnologias Utilizadas
 
@@ -17,9 +17,9 @@ Neste projeto, desenvolvemos um quiz que abrange tópicos de HTML, CSS, Tailwind
 
 Este projeto foi desenvolvido graças aos esforços e contribuições de várias pessoas. Agradecemos aos seguintes contribuidores:
 
-1. [Eduardo Barbosa Ximenes](https://github.com/wineerx) - Especializado em desenvolvimento Frontend, trouxe a expertise em HTML e CSS, ajudando a criar um design atraente e responsivo para o quiz.
+1. [Yuri Ribeiro Cerqueiro](https://github.com/yurizinnsx) - Especializado em desenvolvimento Frontend, trouxe a expertise em HTML e CSS, ajudando a criar um design atraente e responsivo para o quiz.
 
-2. [Yuri Ribeiro Cerqueiro](https://github.com/yurizinnsx) - Com vasta experiência em Tailwind CSS, o Contribuidor 2 otimizou o estilo do quiz, tornando-o elegante e bem estruturado.
+2. [Eduardo Barbosa Ximenes](https://github.com/wineerx) - Com vasta experiência em Tailwind CSS, o Contribuidor 2 otimizou o estilo do quiz, tornando-o elegante e bem estruturado.
 
 3. [Jhonnatan Costa](https://github.com/XsJota/Quiz/commits?author=XsJota) - O Contribuidor 3 trouxe sua proficiência em JavaScript, implementando a lógica por trás das perguntas e respostas do quiz, tornando-o interativo e dinâmico.
 
@@ -51,6 +51,6 @@ Se você quiser apenas executar o quiz para testar seus conhecimentos, siga esta
 
 ## Aviso Legal
 
-Este projeto é destinado apenas para fins educacionais e de aprendizado. As perguntas e respostas presentes no quiz podem não refletir cenários do mundo real com precisão. 
+Este projeto é destinado apenas para fins educacionais e de aprendizado. 
 
 Divirta-se aprendendo e testando seus conhecimentos!
