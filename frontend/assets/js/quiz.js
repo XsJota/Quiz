@@ -105,7 +105,6 @@ const loadQuestion = () => {
     score = 0;
     loadQuestion();
   });
-  $("h-full").click()
 };
 
 const submitButton = (event) => {
@@ -180,7 +179,7 @@ function playGame(status) {
   
       <div>
       <div class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-        <button id='start' type="button" onclick="">Iniciar</button>
+        <button type="button" onclick="">Iniciar</button>
       </div>
   
       <div class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
@@ -194,12 +193,12 @@ function playGame(status) {
   </div>
   `);
 
-  $("#start").click(function () {
+  $(".p-2").click(function () {
     inGame = true;
     playGame(inGame);
   });
 }
-$("#start").click(function () {
+$(".p-2").click(function () {
   inGame = true;
   playGame(inGame);
 });
