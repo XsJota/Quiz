@@ -96,6 +96,18 @@ const loadQuestion = () => {
   <button class="w-full bg-red-400 text-white py-2 rounded-md hover:bg-red-600">Reiniciar</button>
   </div>
   `)
+  $(".bg-white").append(`
+  <div class="mt-6">
+  <button class="w-full bg-red-400 text-white py-2 rounded-md hover:bg-red-600">Encerrar</button>
+  </div>
+  `)
+  $(".mt-6").click(function() {
+    $("body").empty();
+    inGame = false;
+    score = 0;
+    currentQuestion = 0;
+    playGame();
+  });
   $(".mb-4").click(submitButton);
   $(".mt-4").click(function() {
     $("body").empty();
