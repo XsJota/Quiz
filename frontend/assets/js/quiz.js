@@ -188,7 +188,7 @@ function playGame(status) {
         </div>
   
       <div>
-      <div class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
+      <div id='start' class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
         <button type="button" onclick="">Iniciar</button>
       </div>
   
@@ -203,12 +203,12 @@ function playGame(status) {
   </div>
   `);
 
-  $(".p-2").click(function () {
+  $("#start").click(function () {
     inGame = true;
     playGame(inGame);
   });
 }
-$(".p-2").click(function () {
+$("#start").click(function () {
   inGame = true;
   playGame(inGame);
 });
