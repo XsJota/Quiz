@@ -57,28 +57,26 @@ $(document).ready(function(){
   const playGame = () => {
     $("body").empty();
     $("body").append(`
-    <div class="flex justify-center items-center h-screen">
-      <div class="container w-full max-w-xl ">
-        <div class="px-32 pt-6 pb-8 mb-4 ">
-    
-          <div class="logo mr-5 max-w-xs max-w-xs">
-            <img src="./frontend/assets/img/quiz.png" alt="Logo Quiz" srcset="">
+      <div class="flex justify-center items-center h-screen">
+        <div class="container w-full max-w-xl ">
+          <div class="px-32 pt-6 pb-8 mb-4 ">
+            <div class="logo mr-5 max-w-xs max-w-xs">
+              <img src="./assets/img/quiz.png" alt="Logo Quiz" srcset="">
+            </div>
+            <div>
+              <div id='start' class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
+                <button type="button" onclick="">Iniciar</button>
+              </div>
+              <div id='score' class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
+                <button type="button" onclick="">Recordes</button>
+              </div>
+              <div id='close' class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
+                <button type="button" onclick="">Encerrar</button>
+              </div>
+            </div>
           </div>
-    
-        <div>
-        <div id='start' class="p-2 text-center bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-          <button type="button" onclick="">Iniciar</button>
-        </div>
-    
-        <div id='score' class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-          <button type="button" onclick="">Recordes</button>
-        </div>
-    
-        <div id='close' class="my-7 text-center p-2 bg-yellow-500/100 rounded-md hover:bg-yellow-600">
-          <button type="button" onclick="">Encerrar</button>
         </div>
       </div>
-    </div>
     `);
   
     const loadQuestion = () => {
@@ -88,7 +86,7 @@ $(document).ready(function(){
             <div class="container w-full max-w-xl ">
               <div class="p-12 pb-10 mb-10 flex flex-col items-center justify-center">
                 <div class="logo mr-5 max-w-xs max-w-xs">
-                    <img src="./frontend/assets/img/quiz2.png" alt="Logo Quiz" style="max-width: 150px; max-height: 150px;">
+                    <img src="./assets/img/quiz.png" alt="Logo Quiz" style="max-width: 150px; max-height: 150px;">
                 </div>
                 <div class="bg-white p-8 rounded shadow-md w-96 shadow-lg shadow-gray-500/50">
                     <div class="flex items-center justify-between mb-4">
@@ -268,6 +266,6 @@ $(document).ready(function(){
         }
       });
     });
-  }
+  };
   playGame();
 });
