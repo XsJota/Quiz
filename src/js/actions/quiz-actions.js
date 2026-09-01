@@ -5,7 +5,7 @@ import { quizState } from "../state/quiz-states.js";
 import { quizQuestions } from "../data/questions.js";
 
 // services imports
-import { getHighScore, saveHighScore } from "../service/storage-service.js";
+import { getHighScore, saveHighScore, removeHighScore } from "../service/storage-service.js";
 
 // start function
 export const startQuiz = () => {
@@ -54,11 +54,11 @@ export const resetQuiz = () => {
       btnClass: 'btn-red',
       keys: ['enter', 'shift'],
       action: function(){
-        localStorage.removeItem("Pontuação");
-          window.close();
-          quizState.status = 'menu';
-          quizState.score = 0;
-          quizState.currentQuestion = 0;
+        removeHighScore();
+        window.close();
+        quizState.status = 'menu';
+        quizState.score = 0;
+        quizState.currentQuestion = 0;
         }
       }
     }
