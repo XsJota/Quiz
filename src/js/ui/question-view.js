@@ -18,7 +18,7 @@ export const renderQuestion = ($app, state) => {
             <div class="container w-full max-w-xl ">
               <div class="p-12 pb-10 mb-10 flex flex-col items-center justify-center">
                 <div class="logo mr-5 max-w-xs max-w-xs">
-                    <img src="../../public/assets/images/quiz.png" alt="Logo Quiz" style="max-width: 150px; max-height: 150px;">
+                    <img src="./public/assets/images/quiz.png" alt="Logo Quiz" style="max-width: 150px; max-height: 150px;">
                 </div>
                 <div class="bg-white p-8 rounded shadow-md w-96 shadow-lg shadow-gray-500/50">
                     <div class="flex items-center justify-between mb-4">
