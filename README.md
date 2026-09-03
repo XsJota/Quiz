@@ -129,7 +129,7 @@ git clone https://github.com/XsJota/quiz.git
 ### 2. Acesse o projeto
 
 ```bash
-cd Quiz
+cd quiz
 ```
 
 ### 3. Execute
